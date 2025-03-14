@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/cal-style.css">
+  <link rel="stylesheet" href="./css/jquery-nao-calendar.css">
+  <link rel="stylesheet" href="./css/jquery-pseudo-ripple.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.js" integrity="sha512-7DgGWBKHddtgZ9Cgu8aGfJXvgcVv4SWSESomRtghob4k4orCBUTSRQ4s5SaC2Rz+OptMqNk0aHHsaUBk6fzIXw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <aside>
+        <div class="logo">
+            <img id="logo1" src="./images/logo.png" alt="">
+        </div>
+        <nav>
+            <ul class="mainul">
+                <li class="mainli">
+                    <div class="mainlist1">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="mh">Dashboard</span>
+                        <i class="fa-solid fa-angle-down ra1"></i>
+                    </div>
+                    <ul class="innerul1">
+                        <li class="innerli">
+                            <a href="">
+                                <span>Classic</span>
+                            </a>
+                        </li>
+                        <li class="innerli">
+                            <a href="">
+                                <span>Minimal</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mainli">
+                    <div class="mainlist2">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <span class="mh">Pages</span>
+                        <i class="fa-solid fa-angle-down ra2"></i>
+                    </div>
+                    <ul class="innerul2">
+                        <li class="innerli">
+                            <a href="">
+                                <span>Login</span>
+                            </a>
+                        </li>
+                        <li class="innerli">
+                            <a href="">
+                                <span>Register</span>
+                            </a>
+                        </li>
+                        <li class="innerli">
+                            <a href="">
+                                <span>Forget Password</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mainli">
+                    <div class="mainlist3">
+                        <i class="fa-brands fa-android"></i>
+                        <span class="mh">Applications</span>
+                        <i class="fa-solid fa-angle-down ra3"></i>
+                    </div>
+                    <ul class="innerul3">
+                        <li class="innerli">
+                            <a href="">
+                                <span>Mail Box</span>
+                            </a>
+                        </li>
+                        <li class="innerli">
+                            <a href="">
+                                <span>Chat</span>
+                            </a>
+                        </li>
+                        <li class="innerli">
+                            <a href="">
+                                <span>FAQ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mainli">
+                    <div class="mainlist4">
+                        <i class="fa-solid fa-palette"></i>
+                        <span class="mh">UI Component</span>
+                        <i class="fa-solid fa-angle-down ra4"></i>
+                    </div>
+                    <ul class="innerul4">
+                        <li class="innerli">
+                            <a href="">
+                                <span>Elements</span>
+                            </a>
+                        </li>
+                        <li class="innerli">
+                            <a href="">
+                                <span>Components</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mainli">
+                    <div class="mainlist5">
+                        <i class="fa-solid fa-palette"></i>
+                        <span class="mh">Widgets</span>
+                        <i class="fa-solid fa-angle-down ra5"></i>
+                    </div>
+                    <ul class="innerul5">
+                        <li class="innerli">
+                            <a href="">
+                                <span>Chart Boxes 1</span>
+                            </a>
+                        </li>
+                        <li class="innerli">
+                            <a href="">
+                                <span>Profile Box</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mainli">
+                    <div class="mainlist6">
+                       <i class="fa-brands fa-wpforms"></i>
+                       <span class="mh">Forms</span>
+                       <i class="fa-solid fa-angle-down ra6"></i>
+                    </div>
+                    <ul class="innerul6">
+                        <li class="innerli">
+                            <a href="">
+                                <span>Elements</span>
+                            </a>
+                        </li>
+                        <li class="innerli">
+                            <a href="">
+                                <span>Widgets</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mainli">
+                    <div class="mainlist7">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span class="mh">Charts</span>
+                        <i class="fa-solid fa-angle-down ra7"></i>
+                    </div>
+                    <ul class="innerul7">
+                        <li class="innerli">
+                            <a href="">
+                                <span>ChartJS</span>
+                            </a>
+                        </li>
+                        <li  class="innerli">
+                            <a href="">
+                                <span>Apex Charts</span>
+                            </a>
+                        </li>
+                        <li  class="innerli">
+                            <a href="">
+                                <span>Chart Sparkline</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <header>
+        <i class="fa-solid fa-bars-staggered close-open cls-btn"></i>
+        <form action="">
+            <input type="search" placeholder="Search here...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+        <div class="info">
+            <img src="./images/notification.svg" class="webicon" alt="">
+            <img src="./images/information.svg" class="webicon" alt="">
+            <img src="./images/p1.png" class="people" alt="">
+            <a href="./login.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+        </div>
+    </header>
+
+    <section class="s1">
+        <div class="s1d1">
+            <h2>Total Income</h2>
+            <h1>$ <span class="counter">5,79,000</span></h1>
+            <p>Saved 25%</p>
+        </div>
+        <div class="s1d2">
+            <h2>Total Expences</h2>
+            <h1>$ <span class="counter">79,000</span></h1>
+            <p>Saved 25%</p>
+        </div>
+        <div class="s1d3">
+            <h2>Cash on Hand</h2>
+            <h1>$ <span class="counter">92,000</span></h1>
+            <p>Saved 25%</p>
+        </div>
+        <div class="s1d4">
+            <h2>Net Profit Margin</h2>
+            <h1>$ <span class="counter">1,79,000</span></h1>
+            <p>Saved 25%</p>
+        </div>
+    </section>
+
+    <section class="s2">
+        <div class="s2d1">
+            <h1>AP and AR Balance</h1>
+            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+        </div>
+        <div class="s2d2">
+            <h1>% of Income Budget</h1>
+            <img src="./images/10008.svg" alt="">
+            <button>View Full Report</button>
+        </div>
+    </section>
+
+    <section class="s3">
+        <div class="s3d1">
+            <h1>Our Location</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8536.109218154352!2d70.75353822681193!3d22.330880123241535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959c91b4c13eeaf%3A0x311496f28bd7b4b!2sGhanteshwar%20Park%20(%20The%20Multi%20Cuisine%20Park%20)!5e0!3m2!1sen!2sin!4v1705164037455!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="container">
+            <h1>Calendar</h1>
+            <div class="myCalendar"></div>
+          </div>
+    </section>
+    
+    <footer>
+        <h1>2024 <i class="fa fa-copyright" aria-hidden="true"></i> Influence - Designed by Dashboard</h1>
+    </footer>
+
+</body>
+<script src="./js/main.js"></script>
+<script src="./js/counter.js"></script>
+<script src="./js/chart.js"></script>
+<script src="./js/jquery-nao-calendar.js"></script>
+<script src="./js/jquery-pseudo-ripple.js"></script>
+
+<script>
+    $('.myCalendar').calendar({
+  date: new Date(),
+  autoSelect: false, // false by default
+  select: function(date) {
+    console.log('SELECT', date)
+  },
+  toggle: function(y, m) {
+    console.log('TOGGLE', y, m)
+  }
+})
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</html>
