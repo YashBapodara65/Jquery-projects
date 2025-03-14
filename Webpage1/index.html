@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/slick-slider.css">
+    <link rel="stylesheet" href="./css/slick.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <section class="info">
+        <div class="maindata">
+            <p><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;hello.colorlib@gmail.com</p>
+            <span>|</span>
+            <p><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;+65 11 188 888</p>
+        </div>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-pinterest"></i>
+        </div>
+        <span>|</span>
+        <form action="">
+            <select name="" id="">
+                <option value="">English</option>
+                <option value="">German</option>
+            </select>
+        </form>
+        <span>|</span>
+        <div class="cust">
+            <i class="fa-solid fa-user"></i>
+            <h1>Login</h1>
+        </div>
+    </section>
+
+    <section class="s1">
+        <div class="s1d1">
+            <img src="./image/logo.png" alt="">
+        </div>
+        <form action="">
+            <select name="" id="">
+                <option value="">All Categories</option>
+                <option value="">Men's</option>
+                <option value="">Women's</option>
+                <option value="">Kid's</option>
+            </select>
+            <span>|</span>
+            <input type="text" placeholder="What do you need ?">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+        <div class="s1d2">
+            <div class="favr">
+                <i class="fa-regular fa-heart"></i>
+                <p>1</p>
+            </div>
+            <div class="cart">
+                <i class="fa-solid fa-store"></i>
+                <p>3</p>
+            </div>
+            <h1>$150.00</h1>
+        </div>
+    </section>
+
+    <header>
+        <div class="main-title">
+            <div class="titles">
+                <i class="fa-solid fa-bars"></i>
+                <h1>All Departments</h1>
+                <i class="fa-solid fa-chevron-down"></i>
+                <!-- <div class="ad">
+                    <div class="ad-lst">
+                        <a href="">Women's Clothing</a>
+                        <a href="">Men's Clothing</a>
+                        <a href="">Underwear</a>
+                        <a href="">Kid's Clothing</a>
+                        <a href="">Brand Fashion</a>
+                        <a href="">Accessories/Shoes</a>
+                        <a href="">Luxury Brands</a>
+                        <a href="">Brand Outdoor Apparel</a>
+                    </div>
+                </div> -->
+            </div>
+            <ul>
+                <li><a>Home</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Collection</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Pages</a></li>
+            </ul>
+        </div>
+        <div class="menu-bars">
+            <h1 class="bar-btn"><span>Menu</span>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-bars"></i></h1>
+            <ul class="mainul">
+                <li class="lsts">Home</li>
+                <li class="lsts">Shop</li>
+                <li>
+                    <div class="lists" id="l1">
+                        <span>Collection</span>&nbsp;&nbsp;
+                        <i class="fa-solid fa-caret-right arr1"></i>
+                    </div>
+                    <ul id="innerul1">
+                        <li>Men's</li>
+                        <li>Women's</li>
+                        <li>Kid's</li>
+                    </ul>
+                </li>
+                <li class="lsts">Blog</li>
+                <li class="lsts">Contact</li>
+                <li>
+                    <div class="lists" id="l2">
+                        <span>Pages</span>&nbsp;&nbsp;
+                        <i class="fa-solid fa-caret-right arr2"></i>
+                    </div>
+                    <ul id="innerul2">
+                        <li>Blog Details</li>
+                        <li>Shopping Cart</li>
+                        <li>Checkout</li>
+                        <li>FAQ</li>
+                        <li>Register</li>
+                        <li>Login</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="s2">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide1">
+                    <div class="sl1">
+                        <h2>BAGS</h2>
+                        <h1>Black Thursday</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, vero. Amet quisquam veniam
+                            quaerat unde!</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="swiper-slide slide2">
+                    <div class="sl1">
+                        <h2>MENS</h2>
+                        <h1>Black Friday</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, vero. Amet quisquam veniam
+                            quaerat unde!</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="swiper-slide slide3">
+                    <div class="sl1">
+                        <h2>KIDS</h2>
+                        <h1>Black Saturday</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, vero. Amet quisquam veniam
+                            quaerat unde!</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="swiper-slide slide4">
+                    <div class="sl1">
+                        <h2>ALL CATEGORY</h2>
+                        <h1>Black Sunday</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, vero. Amet quisquam veniam
+                            quaerat unde!</p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="s3">
+        <div class="s3d1">
+            <h1>Men's</h1>
+            <div class="brd"></div>
+        </div>
+        <div class="s3d2">
+            <h1>Women's</h1>
+            <div class="brd"></div>
+        </div>
+        <div class="s3d3">
+            <h1>Kid's</h1>
+            <div class="brd"></div>
+        </div>
+    </section>
+
+    <section class="s4">
+        <div class="box1">
+            <img src="./image/i4.jpg" alt="">
+            <div class="txt">
+                <h1>Women's</h1>
+                <a href="">Discover More</a>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="body-parts">
+                <a href="">Clothings</a>
+                <a href="">HandBag</a>
+                <a href="">Shoes</a>
+                <a href="">Accessories</a>
+            </div>
+            <div class="regular slider">
+                <div class="slide1">
+                    <div class="b1">
+                        <img src="./image/p1.jpg" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                        <div class="botm">
+                            <i class="fa-regular fa-clipboard"></i>
+                            <h1>+ Quick View</h1>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                    <div class="b2">
+                        <p>Clothes</p>
+                        <h1>Pure sweater</h1>
+                        <h2>$14.00&nbsp;&nbsp;<span>$30.00</span></h2>
+                    </div>
+                </div>
+                <div class="slide2">
+                    <div class="b1">
+                        <img src="./image/p2.jpg" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                        <div class="botm">
+                            <i class="fa-regular fa-clipboard"></i>
+                            <h1>+ Quick View</h1>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                    <div class="b2">
+                        <p>Clothes</p>
+                        <h1>Pure sweater</h1>
+                        <h2>$13.00</h2>
+                    </div>
+                </div>
+                <div class="slide3">
+                    <div class="b1">
+                        <img src="./image/p3.jpg" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                        <div class="botm">
+                            <i class="fa-regular fa-clipboard"></i>
+                            <h1>+ Quick View</h1>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                    <div class="b2">
+                        <p>Clothes</p>
+                        <h1>Pure sweater</h1>
+                        <h2>$34.00</h2>
+                    </div>
+                </div>
+                <div class="slide4">
+                    <div class="b1">
+                        <img src="./image/p4.jpg" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                        <div class="botm">
+                            <i class="fa-regular fa-clipboard"></i>
+                            <h1>+ Quick View</h1>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                    <div class="b2">
+                        <p>Clothes</p>
+                        <h1>Pure sweater</h1>
+                        <h2>$24.00&nbsp;&nbsp;<span>$35.00</span></h2>
+                    </div>
+                </div>
+                <div class="slide5">
+                    <div class="b1">
+                        <img src="./image/p5.jpg" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                        <div class="botm">
+                            <i class="fa-regular fa-clipboard"></i>
+                            <h1>+ Quick View</h1>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                    <div class="b2">
+                        <p>Clothes</p>
+                        <h1>Pure sweater</h1>
+                        <h2>$10.00&nbsp;&nbsp;<span>$15.00</span></h2>
+                    </div>
+                </div>
+                <div class="slide6">
+                    <div class="b1">
+                        <img src="./image/p6.jpg" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                        <div class="botm">
+                            <i class="fa-regular fa-clipboard"></i>
+                            <h1>+ Quick View</h1>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                    <div class="b2">
+                        <p>Clothes</p>
+                        <h1>Pure sweater</h1>
+                        <h2>$34.00</h2>
+                    </div>
+                </div>
+                <div class="slide7">
+                    <div class="b1">
+                        <img src="./image/p7.jpg" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                        <div class="botm">
+                            <i class="fa-regular fa-clipboard"></i>
+                            <h1>+ Quick View</h1>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                    <div class="b2">
+                        <p>Clothes</p>
+                        <h1>Pure sweater</h1>
+                        <h2>$34.00&nbsp;&nbsp;<span>$50.00</span></h2>
+                    </div>
+                </div>
+                <div class="slide8">
+                    <div class="b1">
+                        <img src="./image/p8.jpg" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                        <div class="botm">
+                            <i class="fa-regular fa-clipboard"></i>
+                            <h1>+ Quick View</h1>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                    <div class="b2">
+                        <p>Clothes</p>
+                        <h1>Pure sweater</h1>
+                        <h2>$34.00</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s5">
+        <div class="s5d1">
+            <h1>Day Of The Week</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do ipsum dolor sit amet, consectetur adipisicing elit</p>
+            <h2>$35.00<span> / HandBag</span></h2>
+            <div class="date">
+                <div class="b1">
+                    <h1>30</h1>
+                    <p>Days</p>
+                </div>
+                <div class="b2">
+                    <h1>05</h1>
+                    <p>Hrs</p>
+                </div>
+                <div class="b3">
+                    <h1>00</h1>
+                    <p>Mins</p>
+                </div>
+                <div class="b4">
+                    <h1>13</h1>
+                    <p>Secs</p>
+                </div>
+            </div>
+            <button class="s-btn">Shop Now</button>
+        </div>
+    </section>
+
+    <section class="s6">
+        <div class="box2">
+            <div class="body-parts">
+                <a href="">Clothings</a>
+                <a href="">HandBag</a>
+                <a href="">Shoes</a>
+                <a href="">Accessories</a>
+            </div>
+            <div class="regular slider">
+                <div class="slide1">
+                    <div class="b1">
+                        <img src="./image/p1.jpg" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                        <div class="botm">
+                            <i class="fa-regular fa-clipboard"></i>
+                            <h1>+ Quick View</h1>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                    <div class="b2">
+                        <p>Clothes</p>
+                        <h1>Pure sweater</h1>
+                        <h2>$14.00&nbsp;&nbsp;<span>$30.00</span></h2>
+                    </div>
+                </div>
+                <div class="slide2">
+                    <div class="b1">
+                        <img src="./image/p2.jpg" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                        <div class="botm">
+                            <i class="fa-regular fa-clipboard"></i>
+                            <h1>+ Quick View</h1>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                    <div class="b2">
+                        <p>Clothes</p>
+                        <h1>Pure sweater</h1>
+                        <h2>$13.00</h2>
+                    </div>
+                </div>
+                <div class="slide3">
+                    <div class="b1">
+                        <img src="./image/p3.jpg" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                        <div class="botm">
+                            <i class="fa-regular fa-clipboard"></i>
+                            <h1>+ Quick View</h1>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                    <div class="b2">
+                        <p>Clothes</p>
+                        <h1>Pure sweater</h1>
+                        <h2>$34.00</h2>
+                    </div>
+                </div>
+                <div class="slide4">
+                    <div class="b1">
+                        <img src="./image/p4.jpg" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                        <div class="botm">
+                            <i class="fa-regular fa-clipboard"></i>
+                            <h1>+ Quick View</h1>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                    <div class="b2">
+                        <p>Clothes</p>
+                        <h1>Pure sweater</h1>
+                        <h2>$24.00&nbsp;&nbsp;<span>$35.00</span></h2>
+                    </div>
+                </div>
+                <div class="slide5">
+                    <div class="b1">
+                        <img src="./image/p5.jpg" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                        <div class="botm">
+                            <i class="fa-regular fa-clipboard"></i>
+                            <h1>+ Quick View</h1>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                    <div class="b2">
+                        <p>Clothes</p>
+                        <h1>Pure sweater</h1>
+                        <h2>$10.00&nbsp;&nbsp;<span>$15.00</span></h2>
+                    </div>
+                </div>
+                <div class="slide6">
+                    <div class="b1">
+                        <img src="./image/p6.jpg" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                        <div class="botm">
+                            <i class="fa-regular fa-clipboard"></i>
+                            <h1>+ Quick View</h1>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                    <div class="b2">
+                        <p>Clothes</p>
+                        <h1>Pure sweater</h1>
+                        <h2>$34.00</h2>
+                    </div>
+                </div>
+                <div class="slide7">
+                    <div class="b1">
+                        <img src="./image/p7.jpg" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                        <div class="botm">
+                            <i class="fa-regular fa-clipboard"></i>
+                            <h1>+ Quick View</h1>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                    <div class="b2">
+                        <p>Clothes</p>
+                        <h1>Pure sweater</h1>
+                        <h2>$34.00&nbsp;&nbsp;<span>$50.00</span></h2>
+                    </div>
+                </div>
+                <div class="slide8">
+                    <div class="b1">
+                        <img src="./image/p8.jpg" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                        <div class="botm">
+                            <i class="fa-regular fa-clipboard"></i>
+                            <h1>+ Quick View</h1>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                    </div>
+                    <div class="b2">
+                        <p>Clothes</p>
+                        <h1>Pure sweater</h1>
+                        <h2>$34.00</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box1">
+            <img src="./image/i5.jpg" alt="">
+            <div class="txt">
+                <h1>Men's</h1>
+                <a href="">Discover More</a>
+            </div>
+        </div>
+    </section>
+
+c
+
+    <section class="s7">
+        <div class="s7d1">
+            <img src="./image/c1.jpg" alt="">
+            <div class="datas">
+                <i class="fa-solid fa-camera-retro"></i><br>
+                <h1>Colorlib_Collection</h1>
+            </div>
+        </div>
+        <div class="s7d2">
+            <img src="./image/c2.jpg" alt="">
+            <div class="datas">
+                <i class="fa-solid fa-camera-retro"></i><br>
+                <h1>Colorlib_Collection</h1>
+            </div>
+        </div>
+        <div class="s7d3">
+            <img src="./image/c3.jpg" alt="">
+            <div class="datas">
+                <i class="fa-solid fa-camera-retro"></i><br>
+                <h1>Colorlib_Collection</h1>
+            </div>
+        </div>
+        <div class="s7d4">
+            <img src="./image/c4.jpg" alt="">
+            <div class="datas">
+                <i class="fa-solid fa-camera-retro"></i><br>
+                <h1>Colorlib_Collection</h1>
+            </div>
+        </div>
+        <div class="s7d5">
+            <img src="./image/c5.jpg" alt="">
+            <div class="datas">
+                <i class="fa-solid fa-camera-retro"></i><br>
+                <h1>Colorlib_Collection</h1>
+            </div>
+        </div>
+        <div class="s7d6">
+            <img src="./image/c6.jpg" alt="">
+            <div class="datas">
+                <i class="fa-solid fa-camera-retro"></i><br>
+                <h1>Colorlib_Collection</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="countsec">
+        <div class="c1">
+            <h1><span class="counter">72,678</span><span> K</span></h1>
+            <h2>Active Users</h2>
+        </div>
+        <div class="c2">
+            <h1><span class="counter">1,206</span><span> K</span></h1>
+            <h2>Total Products</h2>
+        </div>
+        <div class="c3">
+            <h1><span class="counter">1,10,540</span><span> K</span></h1>
+            <h2>Our Visitors</h2>
+        </div>
+        <div class="c4">
+            <h1><span class="counter">12,010</span><span> K</span></h1>
+            <h2>Total Brands</h2>
+        </div>
+    </section>
+
+    <section class="s8">
+        <h1>From The Blog</h1>
+        <hr>
+    </section>
+
+
+    <section class="s9">
+        <div class="box">
+            <div class="s9d1">
+                <div class="s9d1d1">
+                    <img src="./image/b1.jpg" alt="">
+                </div>
+                <div class="s9d1d2">
+                    <div class="icons">
+                        <i class="fa-regular fa-calendar"></i>&nbsp;&nbsp;
+                        <span>May 4, 2019</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fa-regular fa-comment"></i>&nbsp;&nbsp;
+                        <span>5</span>
+                    </div>
+                    <h1>The Best Street Style From London Fashion Week</h1>
+                    <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat</p>
+                </div>
+            </div>
+            <div class="s9d2">
+                <div class="s9d2d1">
+                    <img src="./image/b2.jpg" alt="">
+                </div>
+                <div class="s9d2d2">
+                    <div class="icons">
+                        <i class="fa-regular fa-calendar"></i>&nbsp;&nbsp;
+                        <span>May 4, 2019</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fa-regular fa-comment"></i>&nbsp;&nbsp;
+                        <span>5</span>
+                    </div>
+                    <h1>The Best Street Style From London Fashion Week</h1>
+                    <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat</p>
+                </div>
+            </div>
+            <div class="s9d3">
+                <div class="s9d3d1">
+                    <img src="./image/b3.jpg" alt="">
+                </div>
+                <div class="s9d3d2">
+                    <div class="icons">
+                        <i class="fa-regular fa-calendar"></i>&nbsp;&nbsp;
+                        <span>May 4, 2019</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fa-regular fa-comment"></i>&nbsp;&nbsp;
+                        <span>5</span>
+                    </div>
+                    <h1>The Best Street Style From London Fashion Week</h1>
+                    <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s10">
+        <div class="s10d1">
+            <div class="b1">
+                <img src="./image/truck.png" alt="">
+            </div>
+            <div class="b2">
+                <h1>Free Shipping</h1>
+                <p>For all order over $99</p>
+            </div>
+        </div>
+        <div class="s10d2">
+            <div class="b1">
+                <img src="./image/clock.png" alt="">
+            </div>
+            <div class="b2">
+                <h1>Delivery On Time</h1>
+                <p>If good have prolems</p>
+            </div>
+        </div>
+        <div class="s10d3">
+            <div class="b1">
+                <img src="./image/truck.png" alt="">
+            </div>
+            <div class="b2">
+                <h1>Secure Payment</h1>
+                <p>100% secure payment</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="s11">
+        <div class="s11d1">
+            <img src="./image/l1.png" alt="">
+            <img src="./image/l2.png" alt="">
+            <img src="./image/l3.png" alt="">
+            <img src="./image/l4.png" alt="">
+            <img src="./image/l5.png" alt="">
+        </div>
+    </section>
+
+    <section class="s12">
+        <div class="s12d1">
+            <img src="./image/logo2.png" alt="">
+            <p>Address :- 60-49 Road 11378 New York</p>
+            <p>Phone :- +65 11188 888</p>
+            <p>Email :- hellocolorlib@gmail.com</p>
+            <div class="icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+            </div>
+        </div>
+        <div class="s12d2">
+            <h1>Information</h1>
+            <ul>
+                <li>About Us</li>
+                <li>Checkout</li>
+                <li>Contact</li>
+                <li>Services</li>
+            </ul>
+        </div>
+        <div class="s12d3">
+            <h1>My Account</h1>
+            <ul>
+                <li>My Account</li>
+                <li>Contact</li>
+                <li>Shopping Cart</li>
+                <li>Shop</li>
+            </ul>
+        </div>
+        <div class="s12d4">
+            <h1>Join Our Newsletter Now</h1>
+            <p>Get E-mail updates about out latest shop and special offers.</p>
+            <form action="">
+                <input type="email" placeholder="Enter Your Mail">
+                <button type="button">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <h1>Copyright ©2024 All rights reserved | This template is made with <i class="fa-regular fa-heart"></i> by
+            Yash Bapodara</h1>
+    </footer>
+
+    <script>
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            arrows: false,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".bar-btn").click(function () {
+                $(".mainul").slideToggle();
+                $(".arr1").removeClass("ar");
+                $("#innerul1").slideUp();
+                $(".arr2").removeClass("ar");
+                $("#innerul2").slideUp();
+            })
+            $("#l1").click(function () {
+                $("#innerul1").slideToggle();
+                $(".arr1").toggleClass("ar");
+                $(".arr2").removeClass("ar");
+                $("#innerul2").slideUp();
+            })
+            $("#l2").click(function () {
+                $("#innerul2").slideToggle();
+                $(".arr2").toggleClass("ar");
+                $(".arr1").removeClass("ar");
+                $("#innerul1").slideUp();
+            });
+            $(".que1").click(function(){
+                $(".ans1").slideToggle(500);
+                $("#arr1").toggleClass("arrow");
+                $(".ans2").slideUp(500);
+                $("#arr2").removeClass("arrow");
+                $(".ans3").slideUp(500);
+                $("#arr3").removeClass("arrow");
+            });
+            $(".que2").click(function(){
+                $(".ans2").slideToggle(500);
+                $("#arr2").toggleClass("arrow");
+                $(".ans1").slideUp(500);
+                $("#arr1").removeClass("arrow");
+                $(".ans3").slideUp(500);
+                $("#arr3").removeClass("arrow");
+            });
+            $(".que3").click(function(){
+                $(".ans3").slideToggle(500);
+                $("#arr3").toggleClass("arrow");
+                $(".ans2").slideUp(500);
+                $("#arr2").removeClass("arrow");
+                $(".ans1").slideUp(500);
+                $("#arr1").removeClass("arrow");
+            });
+        })
+    </script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./js/slick.js"></script>
+    <script>
+        $(document).on('ready', function () {
+            $(".regular").slick({
+                dots: false,
+                arrows: false,
+                // fade: false,
+                // asNavFor: '.slider-nav',
+                infinite: true,
+                autoplay: true,
+                // cssEase: 'linear',
+                autoplaySpeed: 2000,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 588,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+</body>
+
+</html>
