@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: skyblue;
+        }
+
+        form{
+            width: 40%;
+            height: 500px;
+            box-shadow: 10px 10px 10px 10px black;
+            display: flex;
+            background-color: antiquewhite;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        form h1{
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-shadow: 2px 5px 2px orangered;
+        }
+
+        form input{
+            width: 55%;
+            height: 40px;
+            background-color: black;
+            font-size: 18px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-left: 2%;
+            border: none;
+            color: white;
+        }
+        
+        form input:focus{
+            outline: none;
+        }
+
+        form button{
+            width: 100px;
+            height: 40px;
+            font-size: 22px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: none;
+            border: 2px solid rgb(41, 41, 41);
+            background: transparent;
+            cursor: pointer;
+        }
+
+        form button:hover{
+            background-color: black;
+            color: white;
+            border: 2px solid black;
+        }
+
+        form a{
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+            text-decoration: none;
+        }
+
+        @media(max-width:980px){
+            form{
+                width: 65%;
+            }
+        }
+
+        @media(max-width:720px){
+            form{
+                width: 75%;
+            }
+        }
+
+        @media(max-width:576px){
+            form{
+                width: 90%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Registration Form</h1>
+            <input type="text" placeholder="Enter Your Name" id="name" required>
+            <input type="email" placeholder="Enter Your Email" id="email" required>
+            <input type="password" placeholder="Enter Your Password" name="" id="pwd" required>
+            <button type="button">Register</button>
+            <a href="./login.html">Login</a>
+    </form>
+</body>
+<script>
+    $(document).ready(function(){
+        const n = document.getElementById("name").value;
+        const e = document.getElementById("email").value;
+        const p = document.getElementById("pwd").value;
+        $("button").click(function(){
+            window.location.href = "./login.html";
+        });
+    });
+</script>
+</html>
